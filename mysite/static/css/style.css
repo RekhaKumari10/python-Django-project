@@ -1,0 +1,86 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100%;
+}
+
+.navbar {
+    background-color:#ee0548;
+
+}
+.collapse .navbar-nav .nav-item a{
+    font-size: larger;
+  }
+  .collapse .navbar-nav .nav-item a:hover{
+    color:var(--black);
+  }
+
+ 
+.service{
+    background-color:#130f40;
+}
+
+.Photos {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-color:#130f40;
+    
+}
+
+.Photos img {
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+.Photos h1 {
+    text-align: center;
+}
+.team{
+    background-color:#130f40;   
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 80px;
+    background-color: black;
+    color: #fff;
+
+}
+
+.font i {
+    color: blue;
+    font-size: 20px;
+
+}
+
+.img-hower img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+
+
+}
+.login form {
+    width: 40%;
+    height: auto;
+    padding: 20px;
+    background: blue;
+    border-radius: 5px;
+    margin: 7% auto;
+}
+
+/* media */
+    @media (min-width: 1025px) {
+    .h-custom-2 {
+    height: 100%;
+    }
+    }
+
+@media(max-width:576px) {
+    .navbar ul li {
+        text-align: center;
+    }
+}

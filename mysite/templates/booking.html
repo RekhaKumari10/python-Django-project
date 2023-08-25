@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> booking form</title>
+    <link rel="stylesheet" href="{% static '/css/booking.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    body{
+    background-image:url("{% static '/images/bg.jpg' %}");
+    background-position: center;
+    background-size: auto;
+}
+</style>
+
+<body>
+    <div class="container">
+        <form class="form-group">
+            <div id="form">
+                <h1 class="text-white text-center">Booking Now</h1>
+
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="First name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" id="input-group" placeholder="Phone number">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder=" Date">
+                    </div>
+                    {% comment %} <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value="">Type of events</option>
+                            <option value="">wedding</option>
+                            <option value="">Birthday</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div> {% endcomment %}
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                       
+                        <select id="input-group" style="background-color: black;">
+                            <option value=""> Wedding venue</option>
+                            <optgroup label="venue">
+                            <option value="">venue1</option>
+                            <option value="">venue2</option>
+                            <option value="">venue3</option>
+                            <option value="">venue4</option>
+                        </optgroup>
+                            <option value="">none</option>
+                        </select>
+                 
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value="">Other events</option>
+                            <option value=""> festival event</option>
+                            <optgroup label="fest">
+                                <option value="">fst1</option>
+                                <option value="">fst2</option>
+                                <option value="">fst3</option>
+                            </optgroup>
+                            <option value="">social event</option>
+                            <optgroup label="social">
+                                <option value="">fst1</option>
+                                <option value="">fst2</option>
+                                <option value="">fst3</option>
+                            </optgroup>
+                            <option value="">seminar</option>
+                            <optgroup label="semi">
+                                <option value="">fst1</option>
+                                <option value="">fst2</option>
+                                <option value="">fst3</option>
+                            </optgroup>
+                            <option value="">none</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div id="second-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Last name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="email" id="input-group" placeholder="Email">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Time">
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value="">catering package</option>
+                            <option value="">pakage1</option>
+                            <option value="">pakage2</option>
+                            <option value="">pakage3</option>
+                            <option value="">pakage4</option>
+                            <option value="">none</option>
+                        </select>
+                      
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value=""> decoration</option>
+                            <optgroup label="birthday decoration">
+                            <option value="">byd1</option>
+                            <option value="">byd2</option>
+                            <option value="">byd3</option>
+                            <option value="">byd4</option>
+                        </optgroup>
+                            <optgroup label="wedding decoration">
+                            <option value="">decoration2</option>
+                            <option value="">decoration3</option>
+                            <option value="">decoration4</option>
+                            <option value="">decoration5</option>
+                            <option value="">decoration6</option>
+                        </optgroup>
+                            <option value="">none</option>
+                        </select>
+                    </div>
+            
+                </div>
+
+                <button type="submit" value="Submit" id="submit-btn">Book Now</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
